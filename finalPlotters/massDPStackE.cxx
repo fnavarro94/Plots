@@ -6,23 +6,23 @@ THStack *hs_InvMassDPCut60 = new THStack("hs_InvMassDPCut60", "");
 double lumi = 2333;  //   1/pb
 
 
-TFile *fZZ = new TFile("ZZMG.root");
-TFile *fWZ = new TFile("WWMG.root");
-TFile *fWW = new TFile("WZMG.root");
-TFile *fDY = new TFile("DYMG.root");
+TFile *fZZ = new TFile("ZZE2G.root");
+TFile *fWZ = new TFile("WWE2G.root");
+TFile *fWW = new TFile("WZE2G.root");
+TFile *fDY = new TFile("DYE2G.root");
 TFile *fll = new TFile("llM.root");
-TFile *flw = new TFile("lw5.root");
-TFile *fDat = new TFile("DatM.root");
+TFile *flw = new TFile("lwE.root");
+TFile *fDat = new TFile("DatE.root");
  
  
 
-TH1F * hZZ_InvMassDPCut60= (TH1F*)fZZ->Get("InvMassDPCut190");
-TH1F * hWZ_InvMassDPCut60= (TH1F*)fWZ->Get("InvMassDPCut190");
-TH1F * hWW_InvMassDPCut60= (TH1F*)fWW->Get("InvMassDPCut190");
-TH1F * hDY_InvMassDPCut60= (TH1F*)fDY->Get("InvMassDPCut190");
-TH1F * hll_InvMassDPCut60= (TH1F*)fll->Get("InvMassDPCut190");
-TH1F * hlw_InvMassDPCut60= (TH1F*)flw->Get("InvMassDPCutLw190");
-TH1F * hDat_InvMassDPCut60= (TH1F*)fDat->Get("InvMassDPCut190"); 
+TH1F * hZZ_InvMassDPCut60= (TH1F*)fZZ->Get("InvMassDPCut50");
+TH1F * hWZ_InvMassDPCut60= (TH1F*)fWZ->Get("InvMassDPCut50");
+TH1F * hWW_InvMassDPCut60= (TH1F*)fWW->Get("InvMassDPCut50");
+TH1F * hDY_InvMassDPCut60= (TH1F*)fDY->Get("InvMassDPCut50");
+TH1F * hll_InvMassDPCut60= (TH1F*)fll->Get("InvMassDPCut50");
+TH1F * hlw_InvMassDPCut60= (TH1F*)flw->Get("InvMassDPCutLw50");
+TH1F * hDat_InvMassDPCut60= (TH1F*)fDat->Get("InvMassDPCut50"); 
 
 
 TH1F * hZZ_nEvents= (TH1F*)fZZ->Get("nEvents");
@@ -103,7 +103,7 @@ legend_InvMassDPCut60->SetFillColor(0);
 legend_InvMassDPCut60->SetFillStyle(0);
 legend_InvMassDPCut60->SetBorderSize(0);
 
-hs_InvMassDPCut60->SetMaximum(2.5);
+hs_InvMassDPCut60->SetMaximum(20);
 hs_InvMassDPCut60->SetTitle("");
 
 hlw_InvMassDPCut60->SetStats(0);
