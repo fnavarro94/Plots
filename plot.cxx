@@ -265,8 +265,9 @@ legend_lxy_err->SetFillColor(0);
 hDat_lxy_err->SetXTitle("mass [GeV/c^{2}]");
 hDat_lxy_err->SetYTitle("Entries");
 hll_lxy_err->SetXTitle("L_{xy}/#sigma_{xy}");
+hll_lxy_err->GetYaxis()->SetTitleOffset(1.2);
 hll_lxy_err->SetYTitle("Entries");
-hll_lxy_err->SetTitle("CMS  #sqrt{s}=7 TeV  L = 2.33 fb^{-1}");
+hll_lxy_err->SetTitle("CMS Open Data #sqrt{s}=7 TeV  L = 2.33 fb^{-1}");
 TLine *line = new TLine(5,0,5,hll_lxy_err->GetMaximum());
 line->SetLineStyle(9);
 cs_lxy_err->cd(1); hll_lxy_err->Draw("hist eX0"); cs_lxy_err->Update(); hs_lxy_err->Draw("same hist eX0"); cs_lxy_err->Update(); hDat_lxy_err->Draw("same  eX0"); line->Draw();
@@ -322,7 +323,7 @@ gPad->SetLogy(1);
 
 TCanvas *cs_InvMass2 = new TCanvas("cs_InvMass2","cs_InvMass2",10,10,700,700);
 
-hDat_InvMass->SetTitle("CMS  #sqrt{s}=7 TeV  L = 2.33 fb^{-1}");
+hDat_InvMass->SetTitle("CMS Open Data #sqrt{s}=7 TeV  L = 2.33 fb^{-1}");
 hDat_InvMass->SetXTitle("M_{#mu#mu} [GeV/c^{2}]");
 hDat_InvMass->SetYTitle("Entires / (GeV/c^{2})");
 hDat_InvMass->SetMarkerStyle(20);
