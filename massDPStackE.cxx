@@ -79,6 +79,19 @@ hll_InvMassDPCut60->Sumw2();
 hlw_InvMassDPCut60->Sumw2();
 
 
+
+TFile *fOut = new TFile("hists_for_limitsE.root","RECREATE"); 
+fOut->cd();
+hZZ_InvMassDPCut60->Write("ZZ");
+hWZ_InvMassDPCut60->Write("WZ");
+hWW_InvMassDPCut60->Write("WW");
+hDY_InvMassDPCut60->Write("DY");
+hll_InvMassDPCut60->Write("ll");
+hlw_InvMassDPCut60->Write("lw");
+hDat_InvMassDPCut60->Write("dat");
+fOut->Write();
+
+
 TCanvas *cs_InvMassDPCut60 = new TCanvas("cs_InvMassDPCut60","cs_InvMassDPCut60",10,10,700,700);
 cs_InvMassDPCut60->cd(1); 
 
